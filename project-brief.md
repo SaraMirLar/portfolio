@@ -1,7 +1,7 @@
 # Project Brief
 
-**Student:** [Your Name]  
-**Handle:** @[your-github-username]  
+**Student:** [Sara Mira Lara]  
+**Handle:** @[SaraMirLar]  
 **Course:** Web Design 2025 · Fall  
 **Date:** [Fill in date - Week 2]
 
@@ -12,10 +12,10 @@
 ### What are you building?
 
 <!-- Describe your project in 2-3 sentences -->
-
+Quiero un portfolio creativo donde mostrar mi trabajo de ilustración, mostrando distintas técnicas y aplicaciones de las ilustraciones.
 ### Who is it for?
 
-<!-- Define your target audience -->
+<!-- Define your target audience --> Va dirigido a todo el mundo, pero en especial a potenciales clientes
 
 ### Why does it matter?
 
@@ -27,27 +27,27 @@
 
 ### Core Technologies
 
-- [ ] HTML5 (semantic markup)
-- [ ] CSS3 (responsive design)
-- [ ] JavaScript (if applicable)
+- [x] HTML5 (semantic markup)
+- [x] CSS3 (responsive design)
+- [x] JavaScript (if applicable)
 - [ ] Other: ****\_\_\_****
 
 ### Accessibility Goals
 
-- [ ] Semantic HTML structure
-- [ ] Proper heading hierarchy
-- [ ] Alt text for images
-- [ ] Keyboard navigation support
-- [ ] Color contrast compliance
-- [ ] Screen reader compatibility
+- [x] Semantic HTML structure
+- [x] Proper heading hierarchy
+- [x] Alt text for images
+- [x] Keyboard navigation support
+- [x] Color contrast compliance
+- [x] Screen reader compatibility
 
 ### Responsive Design Strategy
 
 - [ ] Mobile-first approach
-- [ ] Flexible grid system
-- [ ] Scalable typography
-- [ ] Optimized images
-- [ ] Touch-friendly interactions
+- [x] Flexible grid system
+- [x] Scalable typography
+- [x] Optimized images
+- [x] Touch-friendly interactions
 
 ---
 
@@ -55,9 +55,10 @@
 
 ### Key Sections/Pages
 
-1.
-2.
-3.
+1.Sobre mi
+2.Proyectos
+3.Ilustración
+4.Animación
 
 ### Content Sources
 
@@ -65,7 +66,7 @@
 
 ### Multilingual Considerations
 
-- Primary language:
+- Primary language: Español
 - Secondary language (optional):
 - Translation strategy:
 
@@ -75,15 +76,20 @@
 
 ### Visual Style
 
-<!-- Describe your aesthetic approach -->
-
+<!-- Describe your aesthetic approach --> 
+Limpio, moderno y con estética analógica
 ### Color Palette
 
-<!-- List your main colors -->
+<!-- List your main colors --> Paleta de cuatro colores: Principal #1E1E1C 
+Fondo #F3ECE8
+Secundario #2F4A45
+Acento #C14A2F
+
 
 ### Typography
 
-<!-- What fonts/typeface approach will you use? -->
+<!-- What fonts/typeface approach will you use? --> 
+
 
 ### Inspiration/References
 
@@ -95,18 +101,18 @@
 
 ### Week 4 Goals
 
-- [ ] Functional homepage
-- [ ] Basic responsive layout
-- [ ] Core content in place
-- [ ] Accessible markup
+- [x] Functional homepage
+- [x] Basic responsive layout
+- [x] Core content in place
+- [x] Accessible markup
 
 ### Final Project Goals
 
-- [ ] Fully responsive across devices
-- [ ] Meets WCAG 2.1 AA standards
-- [ ] Fast loading performance
-- [ ] Complete content
-- [ ] Polished visual design
+- [x] Fully responsive across devices
+- [x] Meets WCAG 2.1 AA standards
+- [x] Fast loading performance
+- [x] Complete content
+- [x] Polished visual design
 
 ---
 

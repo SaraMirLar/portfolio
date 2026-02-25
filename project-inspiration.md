@@ -51,7 +51,7 @@
 - **[Adobe Color](https://color.adobe.com/)**: Color wheel and scheme explorer
 - **[Realtime Colors](https://www.realtimecolors.com/)**: Visualize color palettes on real designs
 - **[Google Fonts](https://fonts.google.com/)**: Free, open-source fonts
-- **[Fontjoy](https://fontjoy.com/)**: Font pairing generator
+- **[Fontjoy](https://fontjoy.com/)**https://heroicons.com/: Font pairing generator
 - **[Type Scale](https://typescale.com/)**: Visual typography scale calculator
 - **[Contrast Checker](https://webaim.org/resources/contrastchecker/)**: WCAG accessibility testing
 
@@ -66,7 +66,7 @@
 ### Icons & Graphics
 
 - **[Lucide Icons](https://lucide.dev/)**: Beautiful, consistent icon set (recommended)
-- **[Heroicons](https://heroicons.com/)**: Tailwind's icon library
+- **[Heroicons]()**: Tailwind's icon library
 - **[Phosphor Icons](https://phosphoricons.com/)**: Flexible icon family
 - **[Unsplash](https://unsplash.com/)**: Free high-quality photos and videos
 - **[unDraw](https://undraw.co/)**: Open-source illustrations

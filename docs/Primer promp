@@ -1,0 +1,22 @@
+Personaliza la Hero Section del portfolio.
+
+## 📎 CONTEXTO
+Adjunta: `project-brief.md`
+
+Lee sección "Contenidos Preparados" → "Lema/Tagline para Hero"
+
+## TAREA
+
+Actualiza en `index.html` la Hero Section con:
+- Nombre del brief
+- Tagline del brief
+- Emoji apropiado para tu especialidad
+
+NO dupliques información del brief en este prompt - la IA debe LEER el archivo adjunto.
+
+## REPORT
+1. Nombre extraído del brief: [...]
+2. Tagline integrado: [...]
+3. Responsive: Verificado ✓
+
+[La IA completará después de leer project-brief.md]

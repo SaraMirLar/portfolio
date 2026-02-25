@@ -2,9 +2,9 @@
 # This file will be used to generate your entry in the course showroom
 
 # Basic information
-handle: your-github-username
-name: Your Full Name
-email: your-email@udit.es
+handle: SaraMirLar
+name: Sara Mira Lara
+email: saramiralara@gmail.com
 
 # URLs (will be auto-generated if you follow naming conventions)
 github_url: https://github.com/your-username
@@ -13,7 +13,7 @@ repository_url: https://github.com/your-username/your-project-repo
 
 # Project details
 title:
- es: Título de tu Proyecto en Español
+ es: Portfolio Web
  en: Your Project Title in English
 
 abstract:

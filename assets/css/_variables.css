@@ -14,18 +14,18 @@
 
 	/* ===== COLOR SYSTEM ===== */
 	/* Primary brand colors */
-	--color-primary: #1d4ed8;
-	--color-primary-hover: #1e40af;
-	--color-primary-light: #3b82f6;
-	--color-primary-dark: #1e3a8a;
+	--color-primary: #354945;
+	--color-primary-hover: #354945;
+	--color-primary-light: #8f9a8f;
+	--color-primary-dark: #25393c;
 
 	/* Neutral colors for text and backgrounds */
-	--color-text-primary: #0f172a;
-	--color-text-secondary: #334155;
+	--color-text-primary: #1e1e1c;
+	--color-text-secondary: #2d2d2d;
 	--color-text-muted: #64748b;
 
 	/* Background colors */
-	--color-bg: #ffffff;
+	--color-bg: #f3f1eb;
 	--color-bg-light: #f8fafc;
 	--color-bg-dark: #0f172a;
 
@@ -35,10 +35,10 @@
 	--color-border-dark: #94a3b8;
 
 	/* Semantic colors */
-	--color-success: #10b981;
-	--color-warning: #f59e0b;
-	--color-error: #ef4444;
-	--color-info: #3b82f6;
+	--color-success: #7d8a85;
+	--color-warning: #e9c890;
+	--color-error: #ec7575;
+	--color-info: #8eade0;
 
 	/* ===== TYPOGRAPHY SCALE ===== */
 	/* Fluid typography using clamp() for responsive sizing */
@@ -63,7 +63,7 @@
 	--font-weight-bold: 700;
 
 	/* Font families */
-	--font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	--font-family-base: "IBM Plex Mono", "Inter", "Limelight", "Playfair", system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 	--font-family-heading: var(--font-family-base);
 	--font-family-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace;
 
@@ -106,6 +106,20 @@
 	--z-modal: 50;
 	--z-popover: 60;
 	--z-tooltip: 70;
+
+	/* ===== SCROLLYTELLING GRADIENTS ===== */
+	--gradient-hero: linear-gradient(135deg, #354945 0%, #f3f1eb 100%);
+	--gradient-chapter-1: linear-gradient(135deg, #f3f1eb, #f3f1eb);
+	--gradient-chapter-2: linear-gradient(135deg, #f2ece8, #8f9a8f);
+	--gradient-chapter-3: linear-gradient(135deg, #8f9a8f, #8f9a8f);
+
+	/* ===== SCROLLYTELLING COLORS ===== */
+	--color-accent-blue: #354945;
+	--color-accent-red: #b35238;
+	--color-accent-green: #8f9a8f;
+	--color-overlay-dark: rgba(0, 0, 0, 0.4);
+	--color-card-bg: rgba(255, 255, 255, 0.05);
+	--color-card-border: rgba(255, 255, 255, 0.1);
 }
 
 /* ============================================
