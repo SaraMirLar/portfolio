@@ -100,3 +100,28 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 
 console.log('✅ Scrollytelling initialized');
 console.log(`📊 Observing ${document.querySelectorAll('[data-observe]').length} sections`);
+
+// Efecto parallax para sticker y círculos
+const sticker = document.querySelector('.parallax-sticker');
+const circles = document.querySelectorAll('.parallax-circle');
+const section = document.querySelector('.parallax-section');
+
+window.addEventListener('scroll', () => {
+	const scrollY = window.scrollY;
+	const sectionTop = section.offsetTop;
+	const sectionHeight = section.offsetHeight;
+	const windowHeight = window.innerHeight;
+
+	// Mover solo cuando la sección es visible
+	if (scrollY + windowHeight > sectionTop && scrollY < sectionTop + sectionHeight) {
+		const offset = scrollY - sectionTop;
+
+		// Sticker: se mueve más lento que el scroll
+		sticker.style.transform = `translateY(${offset * 0.2}px) rotate(-10deg)`;
+
+		// Círculos: diferente velocidad para crear profundidad
+		circles[0].style.transform = `translateY(${offset * 0.1}px)`;
+		circles[1].style.transform = `translateY(${offset * 0.15}px)`;
+		circles[2].style.transform = `translateY(${offset * 0.05}px)`;
+	}
+});

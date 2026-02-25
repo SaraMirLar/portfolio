@@ -44,3 +44,82 @@
 
 /* 9. Print: print-specific styles */
 @import '_print.css';
+
+
+/* =========================================
+   Hero Animation Background
+   ========================================= */
+
+/* Fondo de hero con video animado */
+.hero {
+   position: relative;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   overflow: hidden;
+}
+
+.hero-video {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: auto;
+   /* o 100% si quieres cubrir todo */
+   height: 100%;
+   /* altura total de la cabecera */
+   transform: translate(-30%, -50%);
+   object-fit: cover;
+   z-index: 0;
+   /* detrás del contenido */
+   opacity: 0.5;
+   /* ajusta transparencia a tu gusto */
+}
+
+.hero-content {
+   position: relative;
+   z-index: 1;
+   color: white;
+   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección Sobre Mí con imagen a la izquierda */
+.about-me {
+   display: flex;
+   align-items: center;
+   gap: 40px;
+   /* espacio entre imagen y texto */
+   flex-wrap: wrap;
+   /* para que sea responsive en pantallas pequeñas */
+}
+
+.about-image img {
+   width: 300px;
+   /* ajusta el tamaño según necesites */
+   height: auto;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+   flex: 1;
+   /* ocupa el espacio restante */
+}
+
+@media (max-width: 768px) {
+   .about-me {
+      flex-direction: column;
+      /* en móviles la imagen queda arriba */
+      text-align: center;
+   }
+
+   .about-text {
+      margin-top: 20px;
+   }
+
+   .about-image img {
+      width: 70%;
+      /* se ajusta a pantallas pequeñas */
+   }
+}

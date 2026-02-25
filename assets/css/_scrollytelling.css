@@ -170,36 +170,101 @@
 }
 
 /* ===== PARALLAX SECTION ===== */
+/* Sección parallax base */
 .parallax-section {
+	position: relative;
 	height: 60vh;
-	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23667eea;stop-opacity:1" /><stop offset="100%" style="stop-color:%23764ba2;stop-opacity:1" /></linearGradient></defs><rect fill="url(%23grad)" width="1200" height="600"/><circle cx="600" cy="300" r="200" fill="white" opacity="0.1"/><circle cx="300" cy="400" r="150" fill="white" opacity="0.05"/><circle cx="900" cy="200" r="180" fill="white" opacity="0.08"/></svg>');
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
+	background-color: #c14a2f;
+	/* tu color principal */
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: relative;
+	overflow: hidden;
 }
 
-.parallax-section::before {
-	content: '';
-	position: absolute;
-	inset: 0;
-	background: var(--color-overlay-dark);
-}
-
+/* Contenido centrado */
 .parallax-content {
-	text-align: center;
+	position: relative;
+	z-index: 10;
+	text-align: left;
+	/* texto a un lado */
 	color: white;
-	z-index: var(--z-base);
 	padding: var(--space-2xl);
 }
 
-.parallax-content h3 {
-	font-size: var(--font-size-3xl);
-	margin-bottom: var(--space-md);
+/* Sticker PNG */
+.parallax-sticker {
+	position: absolute;
+	width: 120px;
+	bottom: 10%;
+	right: 10%;
+	transform: rotate(-10deg);
+	z-index: 5;
+	pointer-events: none;
+	transition: transform 0.1s linear;
 }
+
+/* Círculos flotantes */
+.parallax-circle {
+	position: absolute;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+	z-index: 2;
+}
+
+.circle1 {
+	width: 200px;
+	height: 200px;
+	top: 20%;
+	left: 30%;
+}
+
+.circle2 {
+	width: 150px;
+	height: 150px;
+	top: 50%;
+	left: 10%;
+}
+
+.circle3 {
+	width: 180px;
+	height: 180px;
+	top: 30%;
+	left: 70%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.parallax-sticker {
+		width: 80px;
+		bottom: 5%;
+		right: 5%;
+		transform: rotate(-5deg);
+	}
+
+	.circle1 {
+		width: 120px;
+		height: 120px;
+		top: 20%;
+		left: 20%;
+	}
+
+	.circle2 {
+		width: 90px;
+		height: 90px;
+		top: 50%;
+		left: 5%;
+	}
+
+	.circle3 {
+		width: 110px;
+		height: 110px;
+		top: 30%;
+		left: 60%;
+	}
+}
+
+
 
 /* ===== INTERACTIVE CARDS ===== */
 .interactive-cards {
