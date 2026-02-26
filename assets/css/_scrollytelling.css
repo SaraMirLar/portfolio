@@ -72,9 +72,11 @@
 	justify-content: center;
 	padding: var(--space-4xl) var(--space-2xl);
 	position: relative;
-	opacity: 0;
-	transform: translateY(50px);
-	transition: opacity 0.8s ease, transform 0.8s ease;
+	opacity: 1;
+	/* 👈 siempre visible */
+	transform: none;
+	/* 👈 quitar animación */
+}
 }
 
 .story-section.visible {
@@ -195,8 +197,8 @@
 /* Sticker PNG */
 .parallax-sticker {
 	position: absolute;
-	width: 120px;
-	bottom: 10%;
+	width: 400px;
+	bottom: -10%;
 	right: 10%;
 	transform: rotate(-10deg);
 	z-index: 5;
@@ -313,70 +315,38 @@
 }
 
 /* ===== TIMELINE ===== */
-.timeline {
-	position: relative;
-	padding: var(--space-2xl) 0;
-	margin: var(--space-3xl) 0;
+.project-item {
+	margin-bottom: var(--space-4xl);
 }
 
-.timeline::before {
-	content: '';
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 2px;
-	height: 100%;
-	background: linear-gradient(to bottom, var(--color-accent-blue), #9b59b6, var(--color-accent-red));
-}
-
-.timeline-item {
-	display: flex;
-	margin: var(--space-3xl) 0;
-	position: relative;
-	opacity: 0;
-	transform: translateY(30px);
-	transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.visible .timeline-item {
-	opacity: 1;
-	transform: translateY(0);
-}
-
-.timeline-item:nth-child(1) {
-	transition-delay: 0.1s;
-}
-
-.timeline-item:nth-child(2) {
-	transition-delay: 0.3s;
-}
-
-.timeline-item:nth-child(3) {
-	transition-delay: 0.5s;
-}
-
-.timeline-content {
-	background: var(--color-card-bg);
-	padding: var(--space-lg);
-	border-radius: var(--radius-md);
-	flex: 1;
-	margin: 0 var(--space-2xl);
-}
-
-.timeline-content h4 {
+.project-item h4 {
+	font-size: var(--font-size-2xl);
+	margin-bottom: var(--space-md);
 	color: var(--color-accent-blue);
+}
+
+.project-images {
+	display: flex;
+	gap: var(--space-md);
+	flex-wrap: wrap;
 	margin-bottom: var(--space-sm);
 }
 
-.timeline-dot {
-	width: 20px;
-	height: 20px;
-	background: var(--color-accent-blue);
-	border-radius: var(--radius-full);
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.3);
+.project-images img {
+	width: 100%;
+	max-width: calc(50% - var(--space-md)/2);
+	height: auto;
+	display: block;
+	margin-bottom: var(--space-sm);
+}
+
+.project-description {
+	font-size: var(--font-size-base);
+	color: var(--color-text-secondary);
+}
+
+.story-section.chapter-4 {
+	min-height: 50vh;
 }
 
 /* ===== FINAL CTA SECTION ===== */

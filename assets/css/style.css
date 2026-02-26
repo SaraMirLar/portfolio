@@ -63,13 +63,13 @@
 
 .hero-video {
    position: absolute;
-   top: 50%;
-   left: 50%;
+   top: 100%;
+   left: 100%;
    width: auto;
    /* o 100% si quieres cubrir todo */
    height: 100%;
    /* altura total de la cabecera */
-   transform: translate(-30%, -50%);
+   transform: translate(-110%, -100%);
    object-fit: cover;
    z-index: 0;
    /* detrás del contenido */
@@ -95,7 +95,7 @@
 }
 
 .about-image img {
-   width: 300px;
+   width: 400px;
    /* ajusta el tamaño según necesites */
    height: auto;
    border-radius: 8px;
@@ -122,4 +122,199 @@
       width: 70%;
       /* se ajusta a pantallas pequeñas */
    }
+}
+
+.project-item {
+   margin-bottom: var(--space-4xl);
+}
+
+.project-item h4 {
+   font-size: var(--font-size-2xl);
+   margin-bottom: var(--space-md);
+   color: var(--color-accent-blue);
+}
+
+.project-images {
+   display: flex;
+   gap: var(--space-md);
+   flex-wrap: wrap;
+   margin-bottom: var(--space-sm);
+}
+
+.project-images img {
+   width: 100%;
+   max-width: calc(50% - var(--space-md)/2);
+   height: auto;
+   display: block;
+   margin-bottom: var(--space-sm);
+}
+
+.project-description {
+   font-size: var(--font-size-base);
+   color: var(--color-text-secondary);
+}
+
+.project-images img {
+   width: 100%;
+   max-width: 45%;
+   height: auto;
+   /* 👈 importante */
+   border-radius: 8px;
+   object-fit: contain;
+   /* 👈 cambia cover por contain */
+}
+
+.story-section.chapter-4 {
+   min-height: 50vh;
+}
+
+.story-section.chapter-4 {
+   padding: 6rem 4rem;
+}
+
+.project-item {
+   margin-bottom: 8rem;
+}
+
+.project-item h4 {
+   font-size: 2rem;
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.project-images {
+   display: flex;
+   gap: 1rem;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 1rem;
+}
+
+.project-images img {
+   width: 100%;
+   max-width: 49%;
+   height: auto;
+   border-radius: 10px;
+   object-fit: contain;
+}
+
+.project-description {
+   font-size: 1rem;
+   color: #333;
+   max-width: 800px;
+   margin: 0 auto;
+   text-align: justify;
+}
+
+/* Móvil: una imagen por fila */
+@media (max-width: 768px) {
+   .project-images img {
+      max-width: 90%;
+   }
+}
+
+/* ========================================
+   GALERÍA SIMPLE SIN TEXTO
+======================================== */
+
+.image-gallery {
+   padding: 4rem 2rem;
+   background: #2f4a45;
+   /* puedes cambiar el color */
+}
+
+.gallery-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 3rem;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.gallery-container img {
+   width: 100%;
+   height: auto;
+   /* 👈 mantiene proporción */
+   display: block;
+   border-radius: 12px;
+   object-fit: contain;
+   /* 👈 nunca recorta */
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+   .gallery-container {
+      grid-template-columns: 1fr;
+   }
+}
+
+.sticker-card {
+   background: transparent;
+   border: none;
+   box-shadow: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.sticker-card img {
+   width: 100%;
+   height: auto;
+   object-fit: contain;
+   transform: rotate(0deg);
+}
+
+.animation-fullscreen {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   /* ocupa toda la pantalla */
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.animation-video {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   /* mantiene proporción original */
+   display: block;
+}
+
+/* Fondo blanco para la segunda animación */
+.white-bg {
+   background-color: #ffffff;
+}
+
+.final-section {
+   position: relative;
+   /* importante para que la imagen se posicione respecto a esta sección */
+   overflow: hidden;
+   /* evita que la imagen se salga */
+}
+
+.final-bg-drawing {
+   position: absolute;
+   top: 10%;
+   /* ajusta verticalmente */
+   left: 50%;
+   /* ajusta horizontalmente a la izquierda */
+   width: 8000px;
+   /* tamaño de la imagen, ajustable */
+   max-width: 50%;
+   /* para responsive */
+   opacity: 0.3;
+   /* transparencia */
+   z-index: 0;
+   /* detrás del contenido */
+   pointer-events: none;
+   /* para que no interfiera con clicks en el contenido */
+}
+
+/* Aseguramos que el contenido quede sobre la imagen */
+.final-content {
+   position: relative;
+   z-index: 1;
 }

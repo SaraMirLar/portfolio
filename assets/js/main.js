@@ -125,3 +125,5 @@ window.addEventListener('scroll', () => {
 		circles[2].style.transform = `translateY(${offset * 0.05}px)`;
 	}
 });
+
+
